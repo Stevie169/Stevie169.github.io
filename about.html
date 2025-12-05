@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About MadDining</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header__inner">
+        <div class="brand">
+          <div class="brand__logo" aria-hidden="true"></div>
+          <a class="brand__name" href="index.html">MadDining</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="page">
+      <main class="main">
+        <section class="panel">
+          <h1 class="panel__title">About MadDining</h1>
+
+          <p class="muted intro">
+            MadDining is an independent project launched in Fall 2025 by a group of students at the
+            University of Wisconsin – Madison via the
+            <a href="https://www.instagram.com/madcodersuw/" class="inline-link">MadCoders Club</a>.
+            This website was created to help students and visitors choose dining halls across campus.<br>
+            If you have any comments, questions, or feedback, feel free to reach out to us 
+            <a href="mailto:szhang2255@wisc.edu?subject=Feedback%20for%20MadDining" class="inline-link">via email</a>.
+          </p>
+
+
+          <section class="team-section">
+            <div class="team-members">
+
+              <!-- --------------- KATRINA ----------------->
+              <article class="team-member card">
+                <div class="member-photo-wrap">
+                  <img class="member-photo" src="Ni.jpg" alt="Katrina Ni">
+                </div>
+
+                <div class="member-card-body">
+                  <a class="member-name"
+                     href="https://siruini.github.io/"
+                     aria-label="Katrina Ni (personal website)"
+                     target="_blank" rel="noopener noreferrer">
+                    Katrina Ni
+                  </a>
+
+                  <div class="member-links" aria-hidden="false">
+
+                    <!-- LinkedIn -->
+                    <a class="member-icon"
+                       href="https://www.linkedin.com/in/katrina-sirui-ni-b00298332/"
+                       title="LinkedIn"
+                       target="_blank" rel="noopener noreferrer">
+                      <img src="linkedin.jpg" alt="LinkedIn" class="icon-img">
+                    </a>
+
+                    <!-- Website -->
+                    <a class="member-icon"
+                       href="https://siruini.github.io/"
+                       title="Personal Website"
+                       target="_blank" rel="noopener noreferrer">
+                      <img src="github.jpg" alt="Github" class="icon-img">
+                    </a>
+
+                    <!-- Email -->
+                    <a class="member-icon"
+                       href="mailto:sni26@wisc.edu"
+                       title="Email">
+                      <img src="email.jpg" alt="Email" class="icon-img">
+                    </a>
+
+                  </div>
+                </div>
+              </article>
+
+
+              <!-- --------------- TRISHANTH --------------- -->
+              <article class="team-member card">
+                <div class="member-photo-wrap">
+                  <img class="member-photo" src="Trishanth.jpg" alt="Suresh Trishanth M">
+                </div>
+
+                <div class="member-card-body">
+                  <a class="member-name"
+                     href="https://placeholder.com"
+                     aria-label="Suresh Trishanth M (personal link)"
+                     target="_blank" rel="noopener noreferrer">
+                    Suresh Trishanth M
+                  </a>
+
+                  <div class="member-links">
+
+                    <!-- Hypothetical LinkedIn -->
+                    <a class="member-icon"
+                       href="https://placeholder.com"
+                       title="LinkedIn"
+                       target="_blank" rel="noopener noreferrer">
+                      <img src="linkedin.jpg" alt="LinkedIn" class="icon-img">
+                    </a>
+
+                    <!-- Hypothetical GitHub -->
+                    <a class="member-icon"
+                       href="https://placeholder.com"
+                       title="GitHub"
+                       target="_blank" rel="noopener noreferrer">
+                      <img src="github.jpg" alt="GitHub" class="icon-img">
+                    </a>
+
+                    <!-- Hypothetical Email -->
+                    <a class="member-icon"
+                       href="mailto:smaddala@wisc.edu"
+                       title="Email">
+                      <img src="email.jpg" alt="Email" class="icon-img">
+                    </a>
+
+                  </div>
+                </div>
+              </article>
+
+
+              <!-- --------------- SHUNYAO --------------- -->
+              <article class="team-member card">
+                <div class="member-photo-wrap">
+                  <img class="member-photo" src="Zhang.jpg" alt="Shunyao Zhang">
+                </div>
+
+                <div class="member-card-body">
+                  <a class="member-name"
+                     href="https://placeholder.com"
+                     aria-label="Shunyao Zhang (personal link)"
+                     target="_blank" rel="noopener noreferrer">
+                    Shunyao Zhang
+                  </a>
+
+                  <div class="member-links">
+
+                    <!-- Hypothetical LinkedIn -->
+                    <a class="member-icon"
+                       href="https://placeholder.com"
+                       title="LinkedIn"
+                       target="_blank" rel="noopener noreferrer">
+                      <img src="linkedin.jpg" alt="LinkedIn" class="icon-img">
+                    </a>
+
+                    <!-- Hypothetical GitHub -->
+                    <a class="member-icon"
+                       href="https://placeholder.com"
+                       title="GitHub"
+                       target="_blank" rel="noopener noreferrer">
+                      <img src="github.jpg" alt="GitHub" class="icon-img">
+                    </a>
+
+                    <!-- Hypothetical Email -->
+                    <a class="member-icon"
+                       href="mailto:szhang2255@wisc.edu"
+                       title="Email">
+                      <img src="email.jpg" alt="Email" class="icon-img">
+                    </a>
+
+                  </div>
+                </div>
+              </article>
+
+
+            </div> <!-- /.team-members -->
+          </section> <!-- /.team-section -->
+
+        </section> <!-- /.panel -->
+      </main>
+    </div> <!-- /.page -->
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>© <span id="year"></span> MadDining. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

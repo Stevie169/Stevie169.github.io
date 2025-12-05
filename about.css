@@ -1,0 +1,209 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #111827;
+  background: #f3f4f6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.header {
+    background: #C5050C;
+    padding: 20px;
+}
+
+.brand__name {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* Main */
+.main {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 1.5rem 3rem;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.panel__title {
+  margin: 1.5rem 0 0.25rem;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0f1724;
+}
+
+.intro {
+  max-width: 920px;
+  margin: 0.5rem 0 0.75rem;
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.inline-link { color: #2563eb; text-decoration: underline; }
+.contact-line { margin-top: 0.6rem; color: #374151; font-size: 0.95rem; }
+
+/* Team grid (cards) */
+.team-section { width: 100%; margin-top: 2.5rem; }
+
+/* Responsive grid */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 2.25rem;
+  align-items: stretch;
+  margin-top: 2.25rem;
+  padding: 0 0.5rem;
+}
+
+/* breakpoints */
+@media (max-width: 1000px) {
+  .team-members { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+}
+@media (max-width: 640px) {
+  .team-members { grid-template-columns: 1fr; padding: 0 1rem; }
+}
+
+/* Card base: stretch to equal heights in row */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  /* removed transform transition that caused pop-up */
+  transition: box-shadow 0.18s ease;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  transform: none;
+}
+
+/* headshot */
+.member-photo-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #e5e7eb;
+  overflow: hidden;
+  position: relative;
+}
+
+/* headshot fills container and is cropped consistently */
+.member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* card body */
+.member-card-body {
+  padding: 16px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 1 auto;
+}
+
+/* name link */
+.member-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: underline;
+  text-align: center;
+  width: 100%;
+}
+
+/* Icons row
+   - take full width and center icons
+   - smaller icons via 30px size
+*/
+.member-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;  /* center icons under name */
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* smaller, tighter icon boxes */
+.member-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;     /* smaller size requested */
+  height: 30px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid rgba(15,23,42,0.06);
+  color: #111827;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.12s ease, box-shadow 0.12s ease;
+  padding: 3px; /* little breathing room for contained icon image */
+}
+
+/* image inside icon */
+.icon-img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+/* icon hover/focus (interactive) - small scale and subtle background */
+.member-icon:hover,
+.member-icon:focus {
+  background: rgba(37,99,235,0.08);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(37,99,235,0.06);
+  outline: none;
+}
+
+/* keyboard accessibility for focus */
+.member-icon:focus {
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+
+/* reduce icon size a bit on very small screens */
+@media (max-width: 420px) {
+  .member-icon { width: 28px; height: 28px; }
+  .icon-img { width: 68%; height: 68%; }
+  .member-name { font-size: 1rem; }
+}
+
+/* ---------- Footer (LEFT ALIGNED with page content) ---------- */
+.footer {
+    background: #C5050C;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}

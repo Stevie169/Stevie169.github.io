@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MadDining - Liz Market</title>
+
+    <link rel="stylesheet" href="lizs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="lizmarket-info">
+        <header class="header">
+            <a class="brand__name" href="index.html">MadDining</a>
+        </header>
+
+        <main class="main">
+            <h1 class="panel__title">Liz Market</h1>
+            <p class="address">Liz Waters Residence Hall · 671 Elm Dr.</p>
+
+            <section class="hours">
+                <h2>Open Hours</h2>
+                <table class="table">
+                    <tr>
+                        <th>Day</th>
+                        <th>Meal</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday – Friday</td>
+                        <td>Breakfast</td>
+                        <td>7:00a.m. – 10:00a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Monday – Friday</td>
+                        <td>Lunch</td>
+                        <td>11:00a.m. – 2:00p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Monday – Friday</td>
+                        <td>Dinner</td>
+                        <td>4:00p.m. – 8:00p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Brunch</td>
+                        <td>9:00a.m. – 2:00p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Dinner</td>
+                        <td>4:00p.m. – 7:00p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td colspan="2">Closed</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="stations">
+                <h2>Stations</h2>
+                <table class="table">
+                    <tr>
+                        <th>Station Name</th>
+                    </tr>
+                    <tr>
+                        <td>1849</td>
+                    </tr>
+                    <tr>
+                        <td>Delicious</td>
+                    </tr>
+                    <tr>
+                        <td>Global Kitchen</td>
+                    </tr>
+                    <tr>
+                        <td>Buckingham Bakery</td>
+                    </tr>
+                    <tr>
+                        <td>Great Greens</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Nearby Dorms -->
+            <section class="nearby">
+                <h2>Nearby Dorms</h2>
+                <table class="table">
+                    <tr>
+                        <th>Dorm</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.housing.wisc.edu/residence-halls/waters/" target="_blank">Liz Waters
+                                Residence Hall</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.housing.wisc.edu/residence-halls/slichter/" target="_blank">Slichter
+                                Residence Hall</a></td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Nearby Educational Buildings -->
+            <section class="nearby">
+                <h2>Nearby Educational Buildings</h2>
+                <table class="table">
+                    <tr>
+                        <th>Building</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://education.wisc.edu" target="_blank">Education Building</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://music.wisc.edu" target="_blank">Music Hall</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://science.wisc.edu" target="_blank">Science Hall</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://humanities.wisc.edu" target="_blank">Mosse Humanities</a></td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Ratings Flip Card -->
+            <section class="ratings">
+                <h2>Ratings</h2>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <!-- FRONT -->
+                        <div class="flip-card-front">
+                            <img src="lizs-logo.png" alt="Liz Market" class="dining-photo">
+                            <h3>Overall Rating</h3>
+
+                            <!-- Dynamic star rating -->
+                            <div class="star-rating big" data-rating="4.0" style="--rating: 4.0;"></div>
+                        </div>
+
+                        <!-- BACK -->
+                        <div class="flip-card-back">
+                            <h3>Category Breakdown</h3>
+
+                            <table class="rating-table">
+                                <tr>
+                                    <td>Taste</td>
+                                    <td>
+                                        <div class="star-rating" data-rating="5.0" style="--rating: 5.0;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Food Variety</td>
+                                    <td>
+                                        <div class="star-rating" data-rating="4.0" style="--rating: 4.0;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Seats Availability</td>
+                                    <td>
+                                        <div class="star-rating" data-rating="4.0" style="--rating: 4.0;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Location</td>
+                                    <td>
+                                        <div class="star-rating" data-rating="5.0" style="--rating: 5.0;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Queuing for Food</td>
+                                    <td>
+                                        <div class="star-rating" data-rating="5.0" style="--rating: 5.0;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Hours</td>
+                                    <td>
+                                        <div class="star-rating" data-rating="4.0" style="--rating: 4.0;"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-ratings">
+                <h3>Text Ratings</h3>
+                <div class="text-rating">
+                    <p>no ratings yet
+                    </p>
+                </div>
+            </section>
+    </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <p>© <span id="year"></span> MadDining. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

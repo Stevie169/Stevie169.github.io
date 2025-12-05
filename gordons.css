@@ -1,0 +1,176 @@
+/* ===== GENERAL ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #111;
+}
+
+h1,
+h2 {
+  color: #C5050C;
+  font-weight: 600;
+}
+
+h3 {
+  color: #333;
+}
+
+a {
+  color: #C5050C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #C5050C;
+  padding: 20px;
+}
+
+.brand__name {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.main {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  line-height: 1.6;
+}
+
+.panel__title {
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+
+.address {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* ===== TABLES ===== */
+.table,
+.rating-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.table th,
+.table td,
+.rating-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table th {
+  background: #C5050C;
+  color: white;
+  text-align: left;
+}
+
+.rating-table td:first-child {
+  font-weight: 500;
+}
+
+/* ===== FLIP CARD ===== */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  max-width: 450px;
+  margin: 30px auto;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #C5050C;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.flip-card-front {
+  text-align: center;
+}
+
+.flip-card-front .dining-photo {
+  height: 255px;
+  border-radius: 8px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* ======================================================
+   ★ DYNAMIC STAR RATING SYSTEM (The important part)
+   ====================================================== */
+
+.star-rating {
+  --star-size: 22px;
+  --star-color: #ccc;
+  --star-filled: gold;
+
+  font-size: var(--star-size);
+  font-family: "Arial";
+  display: inline-block;
+  position: relative;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+/* The empty stars layer */
+.star-rating::before {
+  content: "★★★★★";
+  color: var(--star-color);
+}
+
+/* The filled stars layer */
+.star-rating::after {
+  content: "★★★★★";
+  color: var(--star-filled);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--rating, 0) / 5 * 100%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.star-rating.big {
+  --star-size: 30px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #C5050C;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
